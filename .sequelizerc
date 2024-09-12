@@ -1,0 +1,17 @@
+//Esses caminhos são essenciais para o Sequelize localizar  os arq. que precisa para gerenciar o BD da aplicação
+
+const { resolve } = require('node:path');
+
+module.exports = {
+    // Caminho para o arquivo de configuração do banco de dados
+    config: resolve(__dirname, 'src', 'config', 'database.js'),
+
+    // Caminho para a pasta onde ficam os modelos do Sequelize
+    'models-path': resolve(__dirname, 'src', 'app', 'models'),
+
+     /* 
+     Caminho para o diretório de migrações, 
+     que contém scripts para modificar a estrutura do banco de dados
+    */
+    'migrations-path': resolve(__dirname, 'src', 'database', 'migration')
+}

@@ -1,0 +1,30 @@
+# Desconsiderar arquivos gerados pelo editor
+.vscode/*
+
+# Desconsiderar arquivos de cache
+tmp/*
+*.tmp
+
+# Desconsiderar arquivos de log
+logs/*
+*.log
+
+# Desconsiderar arquivos de build
+build/*
+dist/*
+
+# Desconsiderar dependências
+node_modules/
+
+# Desconsiderar arquivos de configuração local
+.eslintrc.json
+.prettierrc.json
+.vscode/settings.json
+
+# Desconsiderar arquivos de banco de dados
+db/*.sqlite
+db/*.db
+
+# Desconsiderar arquivos gerados por ferramentas
+package-lock.json
+yarn.lock
