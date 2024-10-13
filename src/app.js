@@ -5,6 +5,8 @@
 import express from "express";
 import routes from "./routes.js";
 
+import'./database';
+
 class App {
   constructor() {
     this.app = express(); // Inicializa o express
